@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss"
-import { fontFamily } from "tailwindcss/defaultTheme"
 
 export default {
   darkMode: ["class"],
@@ -55,9 +54,15 @@ export default {
   		},
   		fontFamily: {
   			sans: [
-  				'var(--font-sans)',
-                    ...fontFamily.sans
-                ]
+   				'system-ui',
+  				'-apple-system',
+  				'BlinkMacSystemFont',
+  				'Segoe UI',
+  				'Roboto',
+  				'Helvetica Neue',
+  				'Arial',
+  				'sans-serif'
+   			]
   		},
   		keyframes: {
   			'accordion-down': {
